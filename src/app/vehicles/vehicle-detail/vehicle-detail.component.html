@@ -1,0 +1,63 @@
+<section class="vehicle-detail-container">
+	<div class="row">
+		<div class="col-12 image-container">
+			<img [src]="vehicle.image.big" [alt]="vehicle.model" class="img-fluid">
+
+			<div class="info-container" [@stateContainer]="showinfo">
+
+				<div class="toggle-container text-center align-middle" (click)="toggleInfo()">
+					<i class="fas" [ngClass]="{'fa-arrow-left': showinfo === 'inactive', 'fa-arrow-right': showinfo === 'active'}">
+					</i>
+				</div>
+
+
+
+				<h2 class="text-center vehicle-model" >{{ vehicle.model }}</h2>
+
+				<h1 class="text-center vehicle-price">{{ vehicle.price | currency}}</h1>
+
+				<ul>
+					<li>
+						Marca: {{vehicle.brand}}
+					</li>
+					<li>
+						Engine: {{vehicle.engine}}
+					</li>
+					<li>
+						Transmission: {{vehicle.transmission}}
+					</li>
+					<li>
+						Displacement (cc): {{vehicle.displacement | number}}
+					</li>
+					<li *ngFor="let info of vehicle['extra-info']">
+						{{info}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-12 info-container responsive">
+		<h2 class="text-center">{{ vehicle.model }}</h2>
+
+		<h1 class="text-center">{{ vehicle.price | currency}}</h1>
+
+		<ul>
+			<li>
+				Marca: {{vehicle.brand}}
+			</li>
+			<li>
+				Engine: {{vehicle.engine}}
+			</li>
+			<li>
+				Transmission: {{vehicle.transmission}}
+			</li>
+			<li>
+				Displacement (cc): {{vehicle.displacement | number}}
+			</li>
+			<li *ngFor="let info of vehicle['extra-info']">
+				{{info}}
+			</li>
+		</ul>
+	</div>
+</section>

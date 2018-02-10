@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+
+
+$box-shadow-color:              $strong;
+$bs-horizontal-offset:          3px;
+$bs-vertical-offset:            3px;
+$bs-blur-radius:                5px;
+$bs-spread-radius:              0;
+
+$card-box-shadow:               $bs-horizontal-offset $bs-vertical-offset $bs-blur-radius $bs-spread-radius $box-shadow-color;
+
+
+$card-border-color:             $light;
+$brand-border-right-color:      $light;
+
+
+
+
+.card-container{
+    cursor: pointer;
+    padding-top: 1em;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 1em;
+    border: 1px solid $card-border-color;
+
+    &:hover {
+        -webkit-box-shadow: $card-box-shadow; 
+        -moz-box-shadow:    $card-box-shadow;
+        box-shadow:         $card-box-shadow; 
+    }
+
+
+    p {
+        margin-bottom: 0;
+    }
+    
+
+    .brand-container{
+        border-right: 1px dotted $brand-border-right-color;
+    }
+}
+

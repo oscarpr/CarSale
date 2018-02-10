@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "brand": "Mazda",
+        "model": "Mazda 3",
+        "year": "2018",
+        "engine": "SKYACTIV-G 2,0L/16 válvulas/S-VT/Inyección directa",
+        "transmission": "SKYACTIV-MT de 6 velocidades",
+        "displacement": "1998",
+        "price": "57900000",
+        "image": {
+            "small": "/assets/cars/mazda/mazda-3-small.jpg",
+            "big": "/assets/cars/mazda/mazda-3-big.jpg"
+        },
+        "extra-info": [
+            "Alarma antirrobo con sirena y sensor de intrusión",
+            "Bloqueo central eléctrico"
+        ]
+    },
+    {
+        "id": 2,
+        "brand": "Mazda",
+        "model": "Mazda 2",
+        "year": "2017",
+        "engine": "SKYACTIV-G 1,5L/16 válvulas/S-VT/Inyección directa, Control G-vectoring",
+        "transmission": "SKYACTIV-DRIVE de 6 velocidades",
+        "displacement": "1000",
+        "price": "42900000",
+        "image": {
+            "small": "/assets/cars/mazda/mazda-2-small.png",
+            "big": "/assets/cars/mazda/mazda-2-big.png"
+        },
+        "extra-info": [
+            "6 bolsas de aire",
+            "Radio y Audio"
+        ]
+    },
+    {
+        "id": 3,
+        "brand": "Mazda",
+        "model": "Mazda 6",
+        "year": "2019",
+        "engine": "SKYACTIV-G 2,5L/16 válvulas/Dual S-VT/Inyección directa",
+        "transmission": "SKYACTIV-DRIVE de 6 velocidades",
+        "displacement": "2998",
+        "price": "102900000",
+        "image": {
+            "small": "/assets/cars/mazda/mazda-6-small.png",
+            "big": "/assets/cars/mazda/mazda-6-big.jpg"
+        },
+        "extra-info": [
+            "Sistema Inteligente de Iluminación Frontal (ADB)",
+            "6 Airbags (2 delanteros, 2 laterales y 2 de cortina)"
+        ]
+    },
+    {
+        "id": 4,
+        "brand": "Mazda",
+        "model": "Miata",
+        "year": "2019",
+        "engine": "SKYACTIV-G 2,5L/16 válvulas/Dual S-VT/Inyección directa",
+        "transmission": "SKYACTIV-DRIVE de 6 velocidades",
+        "displacement": "1998",
+        "price": "112900000",
+        "image": {
+            "small": "/assets/cars/mazda/mazda-miata-small.png",
+            "big": "/assets/cars/mazda/mazda-miata-big.jpg"
+        },
+        "extra-info": [
+            "Alarma antirrobo con sirena y sensor de intrusión",
+            "Bloqueo central eléctrico y apertura inteligente de puertas",
+            "Sistema Avanzado de Monitoreo de Punto Ciego (BSM)"
+        ]
+    },
+    {
+        "id": 5,
+        "brand": "Ford",
+        "model": "Fiesta",
+        "year": "2016",
+        "engine": "SKYACTIV-G 2,5L/16 válvulas/Dual S-VT/Inyección directa",
+        "transmission": "SKYACTIV-DRIVE de 6 velocidades",
+        "displacement": "1998",
+        "price": "50100000",
+        "image": {
+            "small": "/assets/cars/ford/ford-fiesta-small.png",
+            "big": "/assets/cars/ford/ford-fiesta-big.png"
+        },
+        "extra-info": [
+            "Alarma antirrobo con sirena y sensor de intrusión",
+            "Bloqueo central eléctrico y apertura inteligente de puertas",
+            "Sistema Avanzado de Monitoreo de Punto Ciego (BSM)"
+        ]
+    },
+    {
+        "id": 6,
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": "2014",
+        "engine": "SKYACTIV-G 2,5L/16 válvulas/Dual S-VT/Inyección directa",
+        "transmission": "SKYACTIV-DRIVE de 6 velocidades",
+        "displacement": "1996",
+        "price": "150000000",
+        "image": {
+            "small": "/assets/cars/ford/ford-mustang-small.jpg",
+            "big": "/assets/cars/ford/ford-mustang-big.png"
+        },
+        "extra-info": [
+            "Alarma antirrobo con sirena y sensor de intrusión",
+            "Bloqueo central eléctrico y apertura inteligente de puertas",
+            "Sistema Avanzado de Monitoreo de Punto Ciego (BSM)"
+        ]
+    },
+    {
+        "id": 7,
+        "brand": "Ferrari",
+        "model": "F12",
+        "year": "2011",
+        "engine": "SKYACTIV-G 2,5L/16 válvulas/Dual S-VT/Inyección directa",
+        "transmission": "SKYACTIV-DRIVE de 6 velocidades",
+        "displacement": "21000",
+        "price": "400000000",
+        "image": {
+            "small": "/assets/cars/ferrari/ferrari-f12-small.png",
+            "big": "/assets/cars/ferrari/ferrari-f12-big.png"
+        },
+        "extra-info": [
+            "Alarma antirrobo con sirena y sensor de intrusión",
+            "Bloqueo central eléctrico y apertura inteligente de puertas",
+            "Sistema Avanzado de Monitoreo de Punto Ciego (BSM)"
+        ]
+    },
+    {
+        "id": 8,
+        "brand": "Ferrari",
+        "model": "Enzo",
+        "year": "2011",
+        "engine": "SKYACTIV-G 2,5L/16 válvulas/Dual S-VT/Inyección directa",
+        "transmission": "SKYACTIV-DRIVE de 6 velocidades",
+        "displacement": "21000",
+        "price": "40000000",
+        "image": {
+            "small": "/assets/cars/ferrari/ferrari-enzo-small.jpg",
+            "big": "/assets/cars/ferrari/ferrari-enzo-big.png"
+        },
+        "extra-info": [
+            "Alarma antirrobo con sirena y sensor de intrusión",
+            "Bloqueo central eléctrico y apertura inteligente de puertas",
+            "Sistema Avanzado de Monitoreo de Punto Ciego (BSM)",
+            "Habla y vuela"
+        ]
+    }
+]

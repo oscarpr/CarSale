@@ -1,0 +1,23 @@
+<article class="card-container">
+	<div class="row">
+		<div class="col-4 col-md-12 vehicle-img-container">
+			<ng-content select="img.vehicle-img"> </ng-content>
+		</div>
+		<div class="col-6 col-md-12">
+			<div class="row">
+				<div class="col-12 text-center">
+					<ng-content select=".model"></ng-content>
+				</div>
+				<div class="col-12 text-center">
+					<ng-content select=".price"></ng-content>
+				</div>
+				<div class="col-6 brand-container text-center">
+					<ng-content select=".brand"></ng-content>
+				</div> 
+				<div class="col-6 text-center">
+					<ng-content select=".year"></ng-content>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

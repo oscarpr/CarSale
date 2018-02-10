@@ -1,0 +1,88 @@
+@import '../../scss/variables';
+
+$responsive-block-background-color: $light;
+$responsive-block-font-color: $white;
+
+.compare-vehicles-container{
+    position: relative;
+    text-align: center;
+    height: 100%;
+    .btn-compare{
+        width: 100%;
+    }
+
+    .selected-vehicles{
+        margin-top: 0.5em;
+        height: 100%;
+        border-right: 2px dotted gray;
+        
+        .vehicle{
+            margin-bottom: 10px;
+            .card-container{
+                &:hover{
+                    box-shadow: none;
+                    cursor: default;
+                }
+            }
+        }
+
+        .remove{
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 9;
+            
+            &:hover{
+                color: red;
+            }
+        }
+    }
+        
+    .searcher-vehicle{
+        
+        .vehicle{
+            margin: 2em 1em;
+        }
+    }
+
+    .selected-vehicles-responsive{
+        display: none;
+    }
+}
+
+@media(orientation: portrait){
+    .compare-vehicles-container{
+        overflow-y: hidden;
+        
+        .selected-vehicles-responsive{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            height: auto;
+            width: 100%;
+            background-color: $responsive-block-background-color;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            color: $responsive-block-font-color;
+
+            .selected-vehicles-responsive-header{
+                height: 25px;
+            }
+        }
+
+        .selected-vehicles-container{
+            display: none;
+        }
+
+
+        .searcher-vehicle{
+        
+            .vehicle{
+                margin: 1em 0;
+            }
+        }
+
+        
+    }
+}

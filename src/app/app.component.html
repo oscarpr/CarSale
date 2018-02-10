@@ -1,0 +1,54 @@
+<div class="container-fluid main-container">
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavForm()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.jpg" width="70" height="30" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item main-nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink="vehicles">
+                            Vehicles
+                        </a>
+                    </li>
+                    <li class="nav-item main-nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink="compare">
+                            Compare
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="form-inline" *ngIf="showNavForm">
+                <button class="btn btn-sm btn-light" type="button" (click)="toggleSearcher()" [attr.aria-expanded]="!hideSearcher" aria-controls="searcherContainer"
+                    [class.active]="!hideSearcher">
+                    Search ...
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </nav>
+        <div class="row" id="searcherContainer" [ngbCollapse]="hideSearcher">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Type a car brand..." id="main-searcher" appSearcher [(arr)]="vehicles"
+                    [searchBy]="'brand'" (results)="vehicles = $event">
+                <ul>
+                    <li *ngFor="let vehicle of vehicles" (click)="showVehicle(vehicle.id)">
+                        <img [src]="vehicle.image.small" [attr.alt]="vehicle.model" class="img-fluid" width="70" height="30">
+                        <p class="model">{{vehicle.model}}</p>
+                        <b class="price">{{vehicle.price | currency}}</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+</div>

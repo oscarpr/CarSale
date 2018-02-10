@@ -1,0 +1,77 @@
+@import './scss/variables';
+@import './scss/base';
+
+$nav-background-color: $light;
+$nav-font-color: $white;
+
+$nav-item-horizontal-border-color: $strongest;
+
+
+$autocomplete-background-color: $light-medium;
+$autocomplete-hover-background-color: $strong;
+
+
+.main-container{
+    height: 100%;
+    
+    .nav-container{
+        margin-bottom: 4em;
+        height: 2em;
+
+        nav{
+            border-radius: 2px;
+            z-index: 3;
+            .main-nav-item{
+                a {  
+                    color: $nav-font-color;
+                }
+            }
+        }
+
+        #searcherContainer{
+               // position: relative;
+
+                ul{
+                    padding-left: 0;
+                    list-style-type: none;
+                    background-color: $autocomplete-background-color;
+                    position: absolute;
+                    z-index: 999;
+                    width: 700px;
+                    max-height: 500px;
+                    overflow-y: scroll;
+                    li{
+                        cursor: pointer;
+                        color: $white;
+                        background-color: $autocomplete-background-color;
+                        opacity: 1;
+                        margin-bottom: 1em;
+
+                        p{
+                            margin-bottom: 0;
+                            display: inline-block;
+                        }
+                        b{
+                            display: block;
+                        }
+
+                        &:hover{
+                            background-color: $autocomplete-hover-background-color;
+                        }
+                    }
+                }
+        }
+    }
+
+    main{
+        z-index: 1;
+        height: calc(100% - 10em);
+    }
+
+    @media(orientation: portrait){
+        main{
+            height: calc(100% - 6em);
+        }   
+    }
+
+}

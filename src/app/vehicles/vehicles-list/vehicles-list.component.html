@@ -1,0 +1,14 @@
+<section class="vehicles-container">
+	<div class="row">
+		<div class="vehicle col-12 col-md-3" *ngFor="let vehicle of vehicles" (click)="showVehicle(vehicle.id)">
+			<app-cards>
+				<img [src]="vehicle.image.small" [attr.alt]="vehicle.model" class="vehicle-img img-fluid">
+				<p class="model">{{vehicle.model}}</p>
+				<b class="price">{{vehicle.price | currency}}</b>
+				<p class="brand mb-0">{{vehicle.brand}}</p>
+				<p class="year mb-0">{{vehicle.year}}</p>
+			</app-cards>
+		</div>
+	</div>
+</section>
+

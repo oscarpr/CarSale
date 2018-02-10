@@ -1,0 +1,77 @@
+@import './../../scss/variables';
+
+$extrainfo-background-color:            rgba(0,0,0, 0.5);
+$extrainfo-font-color:                  $white;
+
+
+$box-shadow-color:                      black;
+$bs-horizontal-offset:                  3px;
+$bs-vertical-offset:                    3px;
+$bs-blur-radius:                        5px;
+$bs-spread-radius:                      0;
+
+$card-box-shadow:                       $bs-horizontal-offset $bs-vertical-offset $bs-blur-radius $bs-spread-radius $box-shadow-color;
+
+
+
+.vehicle-detail-container{
+    overflow-x: hidden;
+
+    .image-container{
+        position: relative;
+        width: 100%;
+    
+        .info-container{
+            position: absolute;
+            top: 0;
+            right: 15px;
+            height: 100%;
+            width: 50%;
+            color: white;
+            background-color: $extrainfo-background-color;
+            border-radius: 5px;
+            padding-top: 3em;
+
+            .toggle-container{
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background-color: $extrainfo-background-color;
+                color: $strongest;
+                position: relative;
+                left: -5em;
+                width: 5em;
+                height: 5em;
+                font-size: 15px;
+
+                i{  
+                    color: white;
+                    line-height: 5;
+                }
+            }
+        }
+    }
+
+    .responsive{
+        display: none !important;
+    }
+}
+
+
+
+/* ------ Responsive --------- */
+
+@media(orientation: portrait){
+    .vehicle-detail-container{
+
+        .responsive{
+            display: block !important;
+        }
+    
+        .image-container{
+            .info-container{
+                display: none;
+            }
+        }
+    }
+
+}
